@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="dom.js"></script>
+    <script type="module" src="app.js" defer></script>
+</head>
+
+<body>
+    <!-- taux de remboursement -->
+    <div>
+        <label htmlFor="inputMontant">Montant</label>
+        <input class="A" type="number" id="inputMontant" value="1000" min="1000" max="1000000" step="1000" />
+    </div>
+    <div>
+        <label htmlFor="inputAnnee">Année</label>
+        <input class="A" type="number" id="inputAnnee" value="1" min="1" max="25" step="1" />
+    </div>
+    <div>
+        <label htmlFor="inputTaux">Taux</label>
+        <input class="A" type="number" id="inputTaux" value="2" min="0.1" max="10" step="0.1" />
+    </div>
+    
+        <!-- Ajout du bouton "Calculer" -->
+        <button id="calculerButton">Calculer</button>
+    
+        <span id="tauxError" class="error-message"></span> <!-- Message d'erreur pour le taux -->
+        
+    <table id="inputMensualite" class="table table-striped"></table>
+    
+</body>
+</html>
+
+<!-- //Amelioration du code
+//fonction valider les entrées
+//modularisation des fonctions
+//optimiser  le dom avec createelement et appenchild
+// separer le dom du app.js
+//ajout du style dynamique 
+ajout du bouton calculer  -->

@@ -1,0 +1,60 @@
+.body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="number"], button {
+    width: 300px; /* Largeur fixe pour les entrées et les boutons */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="number"]:focus, button:hover {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  button {
+    background-color: #4CAF50; /* Couleur verte */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Taille de police */
+    margin-top: 10px; /* Espace au-dessus du bouton */
+  }
+  
+
+button:hover {
+    background-color: #45a049; /* Changement de couleur au survol */
+}
+
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px; /* Espacement au-dessus des messages d'erreur */
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    input, button {
+      width: 100%;
+    }
+  }
+  
